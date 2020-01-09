@@ -1,3 +1,7 @@
 export class Qoute {
-    show
+    showAuthor:boolean
+    constructor(public qoute:string,public author:string,public user:string){
+        this.showAuthor=false
+
+    }
 }
