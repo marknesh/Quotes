@@ -1,21 +1,24 @@
-<div class="row">
-    <div class="col-md-6">
-      <ul>
-<li *ngFor="let qoute of qoutes">{{qoute.author}}
+<div class="container">
+  <div class="row">
+      <div class="col-md-6">
+    <div *ngFor="let qoute of qoutes,let i = index"><h4>{{qoute.qoute}}</h4>
+        
+        <div *ngIf="qoute.showAuthor">
 
-</li>
+            <app-qoute-details  [qoute]='qoute' ></app-qoute-details>
 
-      </ul>  
+         
+            </div>
+            <button (click)="toggle(i)">tap here</button>
 
+   
+    </div>
+  
     </div>
 
-    <div class="col-md-6">
-        <app-qoute-form></app-qoute-form>
+    
 
-    </div>
-
-
-
+    <div class="col-md-6"><app-qoute-form (addQoute)="addNewQoute($event)"></app-qoute-form></div>
+  </div>
 
 </div>
-

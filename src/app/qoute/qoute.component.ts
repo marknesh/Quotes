@@ -8,9 +8,17 @@ import {Qoute} from '../qoute'
 })
 export class QouteComponent implements OnInit {
   qoutes: Qoute[]=[
-    new Qoute("this is qoute","this is the author","this is the submitter")
+    new Qoute("kkk","kmssssssskx","kksww")
   ]
   
+  addNewQoute(qoute){
+    this.qoutes.push(qoute)
+  }
+
+  toggle(index){
+  
+  this.qoutes[index].showAuthor=!this.qoutes[index].showAuthor
+  }
 
   constructor() { }
 

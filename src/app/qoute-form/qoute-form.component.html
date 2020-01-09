@@ -1,18 +1,18 @@
-<form>
+<form (ngSubmit)="submit()">
     <div class="form-group">
         <label for = "qoute">Enter qoute</label>
-        <input type="text" class="form-control" id="qoute" required>
+        <input type="text" class="form-control" id="qoute" [(ngModel)]="newQoute.qoute" name="name" required>
 
     </div>
 
     <div class="form-group">
         <label for = "author">Enter author</label>
-        <input type="text" class="form-control" id="author" required>
+        <input type="text" class="form-control" id="author"  [(ngModel)]="newQoute.author" name="author" required>
 
     </div>
     <div class="form-group">
         <label for = "submitter">Enter your name</label>
-        <input type="text" class="form-control" id="submitter" required>
+        <input type="text" class="form-control" id="submitter" [(ngModel)]="newQoute.user" name="user" required>
 
     </div>
     <button type="submit" class="btn btn-success">Create qoute</button>
