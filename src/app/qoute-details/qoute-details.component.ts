@@ -9,9 +9,9 @@ import {Qoute} from '../qoute'
 })
 export class QouteDetailsComponent implements OnInit {
 
-  @Input() qoute:Qoute;
-  @Output() isComplete=new EventEmitter<boolean>();
-goalDelete(complete:boolean)
+  @Input() qoute:Qoute;  
+  @Output() isComplete=new EventEmitter <boolean>();
+qouteDelete(complete:boolean)
 {this.isComplete.emit(complete)}
 
   constructor() { }

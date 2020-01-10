@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {Qoute} from '../qoute'
+import { Qoute } from '../qoute'
 
 @Component({
   selector: 'app-qoute',
@@ -7,17 +7,23 @@ import {Qoute} from '../qoute'
   styleUrls: ['./qoute.component.css']
 })
 export class QouteComponent implements OnInit {
-  qoutes: Qoute[]=[
-    new Qoute("kkk","kmssssssskx","kksww")
+  qoutes: Qoute[] = [
+    new Qoute("be wise", "mark", "opopoppp")
   ]
-  
-  addNewQoute(qoute){
+
+  addNewQoute(qoute) {
     this.qoutes.push(qoute)
   }
 
-  toggle(index){
-  
-  this.qoutes[index].showAuthor=!this.qoutes[index].showAuthor
+  qouteDelete(isComplete, index) {
+    if (isComplete) {
+      this.qoutes.splice(index,1)
+    }
+  }
+
+  toggle(index) {
+
+    this.qoutes[index].showAuthor = !this.qoutes[index].showAuthor
   }
 
   constructor() { }

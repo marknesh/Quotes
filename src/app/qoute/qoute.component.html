@@ -3,14 +3,15 @@
       <div class="col-md-6">
     <div *ngFor="let qoute of qoutes,let i = index"><h4>{{qoute.qoute}}</h4>
         
-        <div *ngIf="qoute.showAuthor">
-
-            <app-qoute-details  [qoute]='qoute' ></app-qoute-details>
-            submitted by {{qoute.user}}
-
+        <div >
          
+
+            <app-qoute-details  *ngIf="qoute.showAuthor" (isComplete)='qouteDelete($event,i)' [qoute]='qoute' ></app-qoute-details>
+            
             </div>
+            
             <button (click)="toggle(i)">tap here</button>
+       
 
    
     </div>
