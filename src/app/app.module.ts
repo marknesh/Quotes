@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { QouteComponent } from './qoute/qoute.component';
 import { QouteFormComponent } from './qoute-form/qoute-form.component';
 import { QouteDetailsComponent } from './qoute-details/qoute-details.component';
+import { StrikethroughDirective } from './strikethrough.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     QouteComponent,
     QouteFormComponent,
-    QouteDetailsComponent
+    QouteDetailsComponent,
+    StrikethroughDirective
   ],
   imports: [
     BrowserModule,
