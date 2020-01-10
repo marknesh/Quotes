@@ -8,7 +8,7 @@ import { Qoute } from '../qoute'
 })
 export class QouteComponent implements OnInit {
   qoutes: Qoute[] = [
-    new Qoute("be wise", "mark", "oddd")
+    new Qoute("be wise", "mark", "oddd",new Date(2000,6,8))
   ]
 
   addNewQoute(qoute) {
