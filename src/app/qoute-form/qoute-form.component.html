@@ -1,7 +1,7 @@
-<form (ngSubmit)="submit()">
+<form (ngSubmit)="submit()" #qouteForm='ngForm'>
     <div class="form-group">
         <label for = "qoute">Enter qoute</label>
-        <input type="text" class="form-control" id="qoute" [(ngModel)]="newQoute.qoute" name="name" required>
+        <input type="text" class="form-control" id="qoute" [(ngModel)]="newQoute.qoute" name="name"  #name="ngModel" required>
 
     </div>
 
@@ -18,7 +18,7 @@
 
     <div class="form-group">
         <label for = "date">Enter date</label>
-        <input type="date" class="form-control" id="date" [(ngModel)]="newQoute.completeDate" name="date" required>
+        <input type="date" class="form-control" id="date" [(ngModel)]="newQoute.dateCreated" name="date" required>
 
     </div>
 

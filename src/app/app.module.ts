@@ -8,7 +8,8 @@ import { QouteComponent } from './qoute/qoute.component';
 import { QouteFormComponent } from './qoute-form/qoute-form.component';
 import { QouteDetailsComponent } from './qoute-details/qoute-details.component';
 import { StrikethroughDirective } from './strikethrough.directive';
-import { DateCountPipe } from './date-count.pipe';
+import { CountDatePipe } from './count-date.pipe';
+
 
 
 
@@ -19,7 +20,8 @@ import { DateCountPipe } from './date-count.pipe';
     QouteFormComponent,
     QouteDetailsComponent,
     StrikethroughDirective,
-    DateCountPipe,
+    CountDatePipe,
+    
    
     
   ],

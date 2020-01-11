@@ -8,10 +8,6 @@ import {Qoute} from '../qoute'
   styleUrls: ['./qoute-details.component.css']
 })
 export class QouteDetailsComponent implements OnInit {
-
-  
-
-
 @Input() qoute:Qoute;  
 @Output() isComplete=new EventEmitter <boolean>();
 qouteDelete(complete:boolean)
