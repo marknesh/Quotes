@@ -1,3 +1,9 @@
+
 <p>Author: {{qoute.author}}</p>
- <p> submitted by {{qoute.dateCreated|date}}</p>
+ <p> submitted by {{qoute.completeDate|dateCount}}</p>
+ 
+ <button (click)="thumbsUp(qoute)" class="fa fa-thumbs-up"></button>
+ <p>like:{{qoute.like}}</p>
+ <button (click)='thumbsDown(qoute)' class="fa fa-thumbs-down"></button>
+ <p>Dislike:{{qoute.dislike}}</p>
 <button (click)= 'qouteDelete(true)' class="btn btn-danger">Delete button</button>

@@ -7,13 +7,25 @@ import { Qoute } from '../qoute'
   styleUrls: ['./qoute.component.css']
 })
 export class QouteComponent implements OnInit {
+  
   qoutes: Qoute[] = [
-    new Qoute("be wise", "mark", "oddd",new Date(2000,6,8))
+    
+    
   ]
 
   addNewQoute(qoute) {
     this.qoutes.push(qoute)
   }
+
+thumbsUp(qoute){
+  qoute.like=qoute.like + 1
+}
+
+thumbsDown(qoute){
+  qoute.dislike=qoute.dislike + 1
+}
+
+
 
   qouteDelete(isComplete, index) {
     if (isComplete) {

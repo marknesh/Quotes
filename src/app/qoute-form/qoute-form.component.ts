@@ -8,7 +8,7 @@ import { Qoute } from '../qoute';
   styleUrls: ['./qoute-form.component.css']
 })
 export class QouteFormComponent implements OnInit {
-  newQoute = new Qoute("","","",new Date())
+  newQoute = new Qoute("","","",new Date(),0,0)
 
   @Output() addQoute=new EventEmitter <Qoute>();
 

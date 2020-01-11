@@ -8,6 +8,9 @@ import { QouteComponent } from './qoute/qoute.component';
 import { QouteFormComponent } from './qoute-form/qoute-form.component';
 import { QouteDetailsComponent } from './qoute-details/qoute-details.component';
 import { StrikethroughDirective } from './strikethrough.directive';
+import { DateCountPipe } from './date-count.pipe';
+
+
 
 @NgModule({
   declarations: [
@@ -15,7 +18,10 @@ import { StrikethroughDirective } from './strikethrough.directive';
     QouteComponent,
     QouteFormComponent,
     QouteDetailsComponent,
-    StrikethroughDirective
+    StrikethroughDirective,
+    DateCountPipe,
+   
+    
   ],
   imports: [
     BrowserModule,
