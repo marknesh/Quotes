@@ -8,12 +8,15 @@ import { Qoute } from '../qoute'
 })
 export class QouteComponent implements OnInit {
   
+  
+ 
   qoutes: Qoute[] = [
     
     
   ]
 
   addNewQoute(qoute) {
+  
     qoute.dateCreated= new Date(qoute.dateCreated)
     this.qoutes.push(qoute)
   }

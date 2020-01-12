@@ -1,4 +1,4 @@
-<form (ngSubmit)="submit()" #qouteForm='ngForm'>
+<form  (ngSubmit)="submit()" #qouteForm='ngForm' ngNativeValidate  >
     <div class="form-group">
         <label for = "qoute">Enter qoute</label>
         <input type="text" class="form-control" id="qoute" [(ngModel)]="newQoute.qoute" name="name"  #name="ngModel" required>
@@ -12,7 +12,7 @@
     </div>
     <div class="form-group">
         <label for = "submitter">Enter your name</label>
-        <input type="text" class="form-control" id="submitter" [(ngModel)]="newQoute.user" name="user" required>
+        <input type="text" class="form-control" id="submitter" [(ngModel)]="newQoute.user" name="user" required >
 
     </div>
 
@@ -23,7 +23,7 @@
     </div>
 
 
-    <button type="submit" class="btn btn-success">Create qoute</button>
+    <button  type="submit" class="btn btn-success">Create qoute</button>
 
 
 

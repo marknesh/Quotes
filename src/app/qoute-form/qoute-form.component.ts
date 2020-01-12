@@ -1,4 +1,4 @@
-import { Component, OnInit, Output,EventEmitter } from '@angular/core';
+import { Component, OnInit, Output,EventEmitter} from '@angular/core';
 import { Qoute } from '../qoute';
 
 
@@ -8,11 +8,13 @@ import { Qoute } from '../qoute';
   styleUrls: ['./qoute-form.component.css']
 })
 export class QouteFormComponent implements OnInit {
+
   newQoute = new Qoute("","","",new Date(),0,0)
 
   @Output() addQoute=new EventEmitter <Qoute>();
 
   submit(){
+      
     this.addQoute.emit(this.newQoute)
   }
 
