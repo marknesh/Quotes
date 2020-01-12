@@ -16,7 +16,7 @@ export class CountDatePipe implements PipeTransform {
     if(numberOfDays>1 && todayWithNoTime>value){
       return numberOfDays;
     }else{
-      return 2;
+      return 0;
     }    
   }
 }
