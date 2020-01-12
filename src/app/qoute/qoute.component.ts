@@ -16,9 +16,8 @@ export class QouteComponent implements OnInit {
   ]
 
   addNewQoute(qoute) {
-  
     qoute.dateCreated= new Date(qoute.dateCreated)
-    this.qoutes.push(qoute)
+    this.qoutes.unshift(qoute)
   }
 
 thumbsUp(qoute){
