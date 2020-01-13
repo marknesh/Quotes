@@ -6,17 +6,18 @@ import {Qoute} from './qoute'
 })
 export class HighlightDirective {
 
-  constructor(private elem:ElementRef) {
+  constructor(private elem:ElementRef) {   }
+  @HostListener ("click") onClick(){
+    this.texthighlight('blue')}
 
-   }
-   @HostListener("click") onClick(){
-     this.texthighlight("green")
-   }
+   
 
-
-
-  private texthighlight(colour:string){
-    this.elem.nativeElement.style.colour=colour;
+  private texthighlight(tcolour:string){
+    this.elem.nativeElement.style.backgroundColor=tcolour;
   }
 
+ 
+ 
 }
+
+
