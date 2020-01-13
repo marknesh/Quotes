@@ -1,9 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.css";
 body{background-color: blueviolet;}
-.title{color:black;
+.title{color:brown;
 text-align: center;
 font-weight: 900;}
 
 label{font-size: larger;
 font-weight: 900;}
+.titles{color: chartreuse;}
+p{color:tan;
+font-weight: 900;
+font-size: larger;}
+.smallTitle{color:black;
+font-weight: 900;
+font-size: larger;}

@@ -7,15 +7,20 @@ import {Qoute} from './qoute'
 export class HighlightDirective {
 
   constructor(private elem:ElementRef) {   }
-  @HostListener ("click") onClick(){
-    this.texthighlight('blue')}
+   tcolour='none'
 
    
 
   private texthighlight(tcolour:string){
     this.elem.nativeElement.style.backgroundColor=tcolour;
   }
-
+  @HostListener ("click") onClick(){
+    if(this.tcolour==='none'){
+      this.tcolour="yellow";
+    }
+    else{this.tcolour='none'}
+    this.texthighlight(this.tcolour)
+  }
  
  
 }
