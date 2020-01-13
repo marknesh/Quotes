@@ -9,6 +9,7 @@ import { QouteFormComponent } from './qoute-form/qoute-form.component';
 import { QouteDetailsComponent } from './qoute-details/qoute-details.component';
 import { StrikethroughDirective } from './strikethrough.directive';
 import { CountDatePipe } from './count-date.pipe';
+import { HighlightDirective } from './highlight.directive';
 
 
 
@@ -21,6 +22,7 @@ import { CountDatePipe } from './count-date.pipe';
     QouteDetailsComponent,
     StrikethroughDirective,
     CountDatePipe,
+    HighlightDirective,
     
    
     
