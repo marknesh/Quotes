@@ -6,7 +6,7 @@ import {Qoute} from './qoute'
 })
 export class HighlightDirective {
 
-  constructor(private elem:ElementRef) {  
+  constructor(private elem:ElementRef) {
      this.elem.nativeElement.style.backgroundColor="yellow"}
     }
    

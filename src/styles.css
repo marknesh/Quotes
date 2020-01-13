@@ -14,3 +14,10 @@ font-size: larger;}
 .smallTitle{color:black;
 font-weight: 900;
 font-size: larger;}
+.quote{font-weight: 900;
+font-size: 20pt;
+color: darkred;}
+.author{font-weight: 900;
+    font-size: 13pt;
+    }
+    

@@ -11,15 +11,15 @@ export class QouteComponent implements OnInit {
   
  
   qoutes: Qoute[] = [
-    new Qoute(0,"be wise","nesh","mike",new Date(),0,0)
-  
+    new Qoute(0,"Justice is truth in action","nesh","mike",new Date(2019,12,1),0,0),
+    new Qoute(0,"Lost time is never found again","Einstein","john",new Date(2019,11,31),0,0),
+    new Qoute(0,"Proverbs are short sentences drawn from long experience","Washington","alex",new Date(2019,11,27),0,0),
+   
+    
     
     
   ]
 
-get orderQuotes(){
-  return this.qoutes.sort((a,b)=>{
-  return <any>b.like - <any>a.like;});}
    
 
   addNewQoute(qoute) {
@@ -35,13 +35,20 @@ thumbsUp(qoute){
 
 thumbsDown(qoute){
   qoute.dislike=qoute.dislike + 1
-}
+} 
 
+
+
+get orderQuotes() {
+  return this.qoutes.sort((a, b) => {
+    return <any>b.like- <any>a.like;
+  });
+}
 
 
   qouteDelete(isComplete, index) {
     if (isComplete){
-    let toDelete=confirm(`Are you sure you want to delete ${this.qoutes[index].qoute}`)
+    let toDelete=confirm(`Are you sure you want to delete the quote ${this.qoutes[index].qoute}`)
 
 
     if(toDelete){
@@ -57,6 +64,10 @@ thumbsDown(qoute){
 
     this.qoutes[index].showAuthor = !this.qoutes[index].showAuthor
   }
+
+
+  
+  
 
   constructor() { }
 

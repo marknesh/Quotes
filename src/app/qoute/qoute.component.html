@@ -1,12 +1,27 @@
+
+    
+
+
 <div class="container">
 
   <h1 class="title">QOUTES</h1>
   <div class="row">
     
-    <div class="col-md-6"><app-qoute-form (addQoute)="addNewQoute($event)"></app-qoute-form></div>
+    <div class="col-md-6">
+      <app-qoute-form (addQoute)="addNewQoute($event)"></app-qoute-form></div>
 
       <div class="col-md-6">
-    <div *ngFor="let qoute of orderQuotes,let i = index" ><h4  class="smallTitle"  appHighlight >{{qoute.qoute}}</h4>
+       <div class="card" class="text-center" appHighlight>
+        <h3 style="font-style: italic;">Most liked quote</h3>
+        <span class="quote">{{qoutes[0].qoute}}</span>
+        <br> 
+        <span class="author">~{{qoutes[0].author}}</span>
+      </div>
+
+
+
+
+    <div *ngFor="let qoute of orderQuotes,let i = index" class="card-body"><h4  class="smallTitle">{{qoute.qoute}}</h4>
 
       
       <button (click)="toggle(i)" class="btn btn-primary">tap here</button>
