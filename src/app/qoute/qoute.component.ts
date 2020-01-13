@@ -11,6 +11,7 @@ export class QouteComponent implements OnInit {
   
  
   qoutes: Qoute[] = [
+    new Qoute(0,"be wise","nesh","mike",new Date(),0,0)
   
     
     
