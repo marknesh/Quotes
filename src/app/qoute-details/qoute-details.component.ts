@@ -19,6 +19,7 @@ dislike=0
 
 thumbsUp(qoute){
   qoute.like=qoute.like + 1
+  
 }
 
 thumbsDown(qoute){

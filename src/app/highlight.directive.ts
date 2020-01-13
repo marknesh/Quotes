@@ -18,6 +18,12 @@ export class HighlightDirective {
     if(this.tcolour==='none'){
       this.tcolour="yellow";
     }
+
+
+
+
+
+    
     else{this.tcolour='none'}
     this.texthighlight(this.tcolour)
   }
