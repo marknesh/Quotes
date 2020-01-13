@@ -13,7 +13,7 @@ The user can also like or dislike a quote.
 
 ## Technology used
 I used angular and its cli to develop the website.
-I also used my custom css and bootsrap to style the website.
+I also used my custom css and bootstrap to style the website.
 Also font awesome cdn was used.
 
 # Quotes
