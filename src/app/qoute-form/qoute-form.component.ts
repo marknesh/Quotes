@@ -9,13 +9,14 @@ import { Qoute } from '../qoute';
 })
 export class QouteFormComponent implements OnInit {
 
-  newQoute = new Qoute("","","",new Date(),0,0)
+  newQoute = new Qoute(0,"","","",new Date(),0,0)
 
   @Output() addQoute=new EventEmitter <Qoute>();
 
   submit(){
       
     this.addQoute.emit(this.newQoute)
+    this.newQoute= new Qoute(0,"","","",new Date(),0,0)
   }
 
 

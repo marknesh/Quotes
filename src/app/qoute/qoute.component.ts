@@ -11,13 +11,16 @@ export class QouteComponent implements OnInit {
   
  
   qoutes: Qoute[] = [
+  
     
     
   ]
 
   addNewQoute(qoute) {
+    let qouteLength =this.qoutes.length;
+    qoute.id = qouteLength +1;
     qoute.dateCreated= new Date(qoute.dateCreated)
-    this.qoutes.unshift(qoute)
+    this.qoutes.push(qoute)
   }
 
 thumbsUp(qoute){
