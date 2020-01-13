@@ -6,7 +6,8 @@ export class Qoute {
       public user: string,
       public dateCreated:Date,
       public like:number,
-      public dislike:number){
+      public dislike:number,
+      ){
       this.showAuthor=false;
     }
   }

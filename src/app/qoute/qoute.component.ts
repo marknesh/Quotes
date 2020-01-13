@@ -34,10 +34,18 @@ thumbsDown(qoute){
 
 
   qouteDelete(isComplete, index) {
-    if (isComplete) {
+    if (isComplete){
+    let toDelete=confirm(`Are you sure you want to delete ${this.qoutes[index].qoute}`)
+
+
+    if(toDelete){
       this.qoutes.splice(index,1)
     }
+
+    }
   }
+
+  
 
   toggle(index) {
 
