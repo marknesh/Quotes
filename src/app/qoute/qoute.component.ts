@@ -17,6 +17,11 @@ export class QouteComponent implements OnInit {
     
   ]
 
+get orderQuotes(){
+  return this.qoutes.sort((a,b)=>{
+  return <any>b.like - <any>a.like;});}
+   
+
   addNewQoute(qoute) {
     let qouteLength =this.qoutes.length;
     qoute.id = qouteLength +1;
