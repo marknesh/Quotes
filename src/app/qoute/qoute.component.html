@@ -6,7 +6,7 @@
     <div class="col-md-6"><app-qoute-form (addQoute)="addNewQoute($event)"></app-qoute-form></div>
 
       <div class="col-md-6">
-    <div *ngFor="let qoute of qoutes,let i = index" ><h4  class="smallTitle"    appHighlight >{{qoute.qoute}}</h4>
+    <div *ngFor="let qoute of orderQuotes,let i = index" ><h4  class="smallTitle"  appHighlight >{{qoute.qoute}}</h4>
 
       
       <button (click)="toggle(i)" class="btn btn-primary">tap here</button>

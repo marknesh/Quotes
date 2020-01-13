@@ -1,3 +1,6 @@
+
+[![codebeat badge](https://codebeat.co/badges/2712e443-deaa-4d47-9092-edbaefbb9f8c)](https://codebeat.co/projects/github-com-marknesh-quotes-master)
+
 ## Application Name
 Wise Quotes
 
